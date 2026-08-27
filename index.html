@@ -9,44 +9,43 @@
 </head>
 
 <body>
-<header>
-<h1>Meu blog tech </h1><!--Tag para titulo-->
-    <p>vou compartilhar conhecimentos sobre tecnologia e programação</p>
+    <header>
+        <h1>Meu blog tech </h1><!--Tag para titulo-->
+        <p>vou compartilhar conhecimentos sobre tecnologia e programação</p>
 
 
-</header>
+    </header>
 
 
 
 
- <main>
-    <img src="livro.png" alt="">
-<h2>Meu primeiro post</h2>
-<p>por:Daniel smith</p>
-<p>boas-vindas ao meu blog!</p>
-        
-<button>😀<span>0</span></button>
-<button>😀​<span>0</span></button>
-    </div>
-    
-   </main>
- 
-   <footer>rodapé</footer>
+    <main>
+        <img src="livro.png" alt="">
+        <div>
+            <h2>Meu primeiro post</h2>
+            <p>por:Daniel smith</p>
+            <p>boas-vindas ao meu blog!</p>
+
+            <button>😀<span>0</span></button>
+            <button>😀​<span>0</span></button>
+        </div>
+
+    </main>
+
+    <footer>rodapé</footer>
 
 </body>
 <script>
 
-    const botoes=document.querySelectorAll("button");// cria uma variável chamada botão selecionando a tag "button"
-    botoes.forEach(function(botao){
-    botao.addEventListener("click", botaoClicado);//verifica se o botão foi clicado
-    function botaoClicado(){// cria uma função
-      console.log("fui clicado");// mostra se o botão foi clicado
-      let texto=document.querySelector("span");//cria uma  variavel chamada "texto" selecionando a tagb span
-      texto.textContent++; //muda o valor do texto adicionando de uma unidade 
-    }
+    const botoes = document.querySelectorAll("button");// cria uma variável chamada botão selecionando a tag "button"
+    botoes.forEach(function (botao) {
+        botao.addEventListener("click", botaoClicado);//verifica se o botão foi clicado
+        function botaoClicado() {// cria uma função
+            console.log("fui clicado");// mostra se o botão foi clicado
+            let texto = document.querySelector("span");//cria uma  variavel chamada "texto" selecionando a tagb span
+            texto.textContent++; //muda o valor do texto adicionando de uma unidade 
+        }
     })
 </script>
-  
+
 </html>
-
-
