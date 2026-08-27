@@ -36,7 +36,7 @@
 </body>
 <script>
 
-    const botoes=document.querySelector("button");// cria uma variável chamada botão selecionando a tag "button"
+    const botoes=document.querySelectorAll("button");// cria uma variável chamada botão selecionando a tag "button"
     botoes.forEach(function(botao){
     botao.addEventListener("click", botaoClicado);//verifica se o botão foi clicado
     function botaoClicado(){// cria uma função
