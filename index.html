@@ -24,12 +24,27 @@
 <h2>Meu primeiro post</h2>
 <p>por:Daniel smith</p>
 <p>boas-vindas ao meu blog!</p>
- </main>
+        
+<button>♥️<span>0</span></button>
 
-<footer>rodapé</footer>
+    </div>
     
-
+   </main>
+ 
+   <footer>rodapé</footer>
 
 </body>
+<script>
 
+    const botao=document.querySelector("button");// cria uma variável chamada botão selecionando a tag "button"
+    botao.addEventListener("click", botaoClicado);//verifica se o botão foi clicado
+    function botaoClicado(){// cria uma função
+      console.log("fui clicado");// mostra se o botão foi clicado
+      let texto=document.querySelector("span");//cria uma  variavel chamada "texto" selecionando a tagb span
+      texto.textContent++; //muda o valor do texto adicionando de uma unidade 
+    }
+</script>
+  
 </html>
+
+
